@@ -1,0 +1,21 @@
+.transparant_img {
+    opacity: 1.0;
+    filter: alpha(opacity=50); /* For IE8 and earlier */
+}
+
+img:hover {
+    opacity: 0.5;
+    filter: alpha(opacity=100); /* For IE8 and earlier */
+} 
+
+
+
+
+.achtergrond-div {
+     background-size: 100% 450px;
+     background-repeat: no-repeat;
+     background-position: center;
+} 
+
+
+    

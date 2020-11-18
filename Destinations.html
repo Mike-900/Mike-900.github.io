@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link type="text/css" re="stylesheet" href="stylesheet4.css"/>
+	</head>
+<body>
+	<form action="">
+		<select name="Destinations">
+		<option value="Brasov">Brasov</option>
+		<option value="Sibiu">Sibiu</option>
+		<option value="Sigihoara" selected>Sigishoara</option>
+		<option value="Bran">Bran</option>
+		</select>
+	</form>
+
+<p id="demo">Click the button to get your coordinates:</p>
+<button onclick="getLocation()">Try It</button>
+<script>
+var x=document.getElementById("demo");
+function getLocation()
+  {
+  if (navigator.geolocation)
+    {
+    navigator.geolocation.getCurrentPosition(showPosition);
+    }
+  else{x.innerHTML="Geolocation is not supported by this browser.";}
+  }
+function showPosition(position)
+  {
+  x.innerHTML="Latitude: " + position.coords.latitude + 
+  "<br>Longitude: " + position.coords.longitude;	
+  }
+</script>
+</body>
+</html>

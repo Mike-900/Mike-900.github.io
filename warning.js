@@ -1,0 +1,1 @@
+confirm("Look first in the FAQ before you bother our callcenter")
